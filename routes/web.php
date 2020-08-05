@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return view('sanber');
 });
 
-Route::get('/register/', 'AuthController@index')->name('register');
-
-Route::post('/welcome-home/','HomeController@index')->name('home');
+Route::get('/data-table/', 'MainController@index')->name('data-table');
