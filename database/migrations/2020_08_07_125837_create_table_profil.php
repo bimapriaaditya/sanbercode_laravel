@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTablePertanyaan extends Migration
+class CreateTableProfil extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateTablePertanyaan extends Migration
      */
     public function up()
     {
-        Schema::create('pertanyaan', function (Blueprint $table) {
+        Schema::create('profil', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->text('isi');
-            $table->foreignId('jawaban_id');
-            $table->foreignId('profil_id');
+            $table->string('nama_lengkap');
+            $table->string('email');
+            $table->string('img');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateTablePertanyaan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pertanyaan');
+        Schema::dropIfExists('profil');
     }
 }
