@@ -4,7 +4,7 @@
 
     <div class="text-left">
         <form action="{{ route('soal.destroy',$soal->id) }}" method="post">
-            <a href="{{ route('soal') }}" class="btn btn-info">Kembali</a>
+            <a href="{{ route('soal.index') }}" class="btn btn-info">Kembali</a>
             <a href="{{ route('soal.edit', $soal->id) }}" class="btn btn-warning">Edit</a>
             @csrf
             @method('DELETE')

@@ -23,8 +23,8 @@ Route::get('/data-table/', 'MainController@index')->name('data-table');
 
 // Soal
 Route::resource('soal', 'SoalController');
-Route::get('/soal/', 'SoalController@index')->name('soal');
-Route::get('/soal-create/', 'SoalController@create')->name('soal/create');
-Route::post('soal/store', 'SoalController@store')->name('soal/store');
-// Route::get('soal/show/{id}', 'SoalController@show')->name('soal/show');
-Route::get('soal/edit/', 'SoalController@edit')->name('soal/edit');
+// Route::get('/soal/', 'SoalController@index')->name('soal');
+// Route::get('/soal-create/', 'SoalController@create')->name('soal/create');
+// Route::post('soal/store', 'SoalController@store')->name('soal/store');
+// // Route::get('soal/show/{id}', 'SoalController@show')->name('soal/show');
+// Route::get('soal/edit/', 'SoalController@edit')->name('soal/edit');

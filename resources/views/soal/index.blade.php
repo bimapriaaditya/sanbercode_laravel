@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="text-left">
-        <a href="{{ route('soal/create') }}" class="btn btn-success">
+        <a href="{{ route('soal.create') }}" class="btn btn-success">
             Ajukan Soal
         </a>
     </div>
@@ -44,7 +44,7 @@
                                         <td style="text-align:left;">
                                             <form action="{{ route('soal.destroy', $data->id) }}" method="POST">
                                                 <a class="btn btn-info btn-sm" href="{{ route('soal.show',$data->id) }}">Show</a>
-                                                <a class="btn btn-primary btn-sm" href="">Edit</a>
+                                                <a class="btn btn-primary btn-sm" href="{{ route('soal.edit',$data->id) }}">Edit</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>

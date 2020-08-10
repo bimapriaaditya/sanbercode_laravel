@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-left">
-        <a href="{{ route('soal') }}" class="btn btn-primary">Kembali</a>
+        <a href="{{ route('soal.index') }}" class="btn btn-primary">Kembali</a>
         <div>&nbsp;</div>
     </div>
 
@@ -17,7 +17,7 @@
                         </div>
                         <div class="card-body">
     
-                            <form action="{{ route('soal/store') }}" method="POST">
+                            <form action="{{ route('soal.store') }}" method="POST">
     
                                 @csrf
     

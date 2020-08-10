@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="pull-right">
-    <a class="btn btn-primary" href="{{ route('soal') }}"> Back</a>
+    <a class="btn btn-primary" href="{{ route('soal.index') }}"> Back</a>
 </div>
 
 <section>

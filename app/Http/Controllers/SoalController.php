@@ -50,7 +50,7 @@ class SoalController extends Controller
 
         ]);
 
-        return redirect()->route('soal');
+        return redirect()->route('soal.index');
     }
 
     /**
@@ -109,6 +109,6 @@ class SoalController extends Controller
     {
         $soal->delete();
 
-        return redirect()->route('soal');
+        return redirect()->route('soal.index');
     }
 }
